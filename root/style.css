@@ -8,16 +8,51 @@
 .conteudo {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
   gap: 20px;
+  align-items: center;
 }
 
 body {
-  padding: 0 2.5%;
   background-color: #f2f0ef;
 }
 
 header {
+  background-color: rgba(56, 51, 51, 1);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  nav {
+    display: flex;
+  }
+
+  ul {
+    display: flex;
+
+    gap: 10px;
+  }
+
+  li {
+    a:link {
+      color: white;
+      text-decoration: none;
+    }
+    a:visited {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .sub-ul {
+    padding-left: 15px;
+  }
+}
+
+.foto {
   display: flex;
   align-items: center;
   padding-top: 15px;
@@ -35,31 +70,22 @@ header {
   }
 }
 
-aside {
-  nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .sub-ul {
-    padding-left: 15px;
-  }
-}
-
 main {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  align-items: center;
+  max-width: 1100px;
+  width: 80%;
+  padding: 0 10%;
 }
 
+#portifolio {
+  margin-top: 30px;
+}
 section {
+  margin-bottom: 20px;
+
   h2 {
     margin-bottom: 15px;
   }
@@ -76,11 +102,29 @@ section {
     margin-top: 15px;
   }
 }
-.currículo {
+#currículo {
+  width: 100%;
   h3,
   p {
-    margin: 0 15px ;
+    margin: 0 15px;
   }
+}
+.certificados {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
+  justify-content: center;
+  
+}
+.certificados img {
+  max-width: 300px;
+  /* max-width: 80vw; */
+}
+
+.portifolio {
+  width: 100%;
 }
 
 .projetos {
@@ -97,21 +141,30 @@ section {
 
 .projeto img {
   max-width: 400px;
+  max-width: 80vw;
+}
+
+.habilidades {
+  width: 100%;
 }
 
 .technologies {
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 900px) {
-  body {
-    padding: 0 5%;
+@media only screen and (max-width: 500px) {
+  header {
+    li {
+      font-size: 0.75rem;
+    }
   }
-  .conteudo {
-    display: grid;
-    grid-template-columns: 20% 80%;
+}
+@media only screen and (min-width: 900px) {
+  main {
+    align-items: flex-start;
   }
 }
 
@@ -119,9 +172,13 @@ section {
   .projetos {
     flex-direction: row;
     justify-content: space-between;
+    .imagem {
+      max-width: 270px;
+    }
   }
-  .projeto img {
-    max-width: 270px;
+
+  .gif {
+    margin-bottom: 25px;
   }
 }
 

@@ -9,33 +9,26 @@
 
   <body>
     <header>
-      <img src="./assets/perfil.png" alt="" srcset="" />
-      <div class="primary_infos">
-        <h1>Matheus Karnas Castillo</h1>
-        <p>Dev. front-end</p>
-      </div>
+      <ul>
+        <li><a href="#introdução">Introdução</a></li>
+        <li><a href="#currículo">Currículo</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#certificados">Certificados</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </header>
     <div class="conteudo">
-      <aside>
-        <nav>
-          <ul>
-            <li><a href="#introdução">Introdução</a></li>
-            <li><a href="#currículo">Currículo</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <ul class="sub-ul">
-              <li><a href="#hard">Hard Skills</a></li>
-              <li><a href="#soft">Soft Skills</a></li>
-            </ul>
-            <li><a href="#documentos">Documentos</a></li>
-            <li><a href="#certificados">Certificados</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </nav>
-      </aside>
       <main>
+        <section class="foto">
+          <img src="./assets/perfil.png" alt="" srcset="" />
+          <div class="primary_infos">
+            <h1>Matheus Karnas Castillo</h1>
+            <p>Dev. front-end</p>
+          </div>
+        </section>
         <section>
-          <h2 id="introdução">Introdução</h2>
+          <h2 id="introdução"></h2>
           <p>
             Desenvolvedor Front-End, com sólida experiência em React e seu
             ecossistema, atualmente cursando Desenvolvimento de Software
@@ -49,21 +42,20 @@
         </section>
         <section id="currículo">
           <h2>Currículo</h2>
-          <h3>Formação Acadêmica:</h3>
+          <h3>Formação Acadêmica</h3>
           <p>
             Cursando Desenvolvimento de Software Multiplataforma – FATEC São
-            José dos Campos (2023 - em andamento)
+            José dos Campos (2024 - 2027)
           </p>
 
-          <h3>Certificações:</h3>
-          <p>
-            Formação Scrum Master – Miraello Consultoria e Treinamento (2023)
-            <br />
-            Ignite ReactJS – Rocketseat (2023) <br />
-            Next.js – Udemy (2022)
-          </p>
+          <h3>Certificações</h3>
+          <div class="certificados">
+            <img src="./assets/certificado-skrum.png" />
+            <img src="./assets/certificado-skrum-master.png" />
+            <img src="./assets/certificado-next.jpg" />
+          </div>
 
-          <h3>Experiencia profissional:</h3>
+          <!-- <h3>Experiencia profissional:</h3>
           <p>
             Software de Gestão para Time de Poker <br />
             Desenvolvi um site de gestão financeira e contratual para um time de
@@ -74,34 +66,61 @@
             TypeScript, FaunaDB <br />
             Resultados: Otimização da gestão financeira e contratual, com uma
             interface moderna e uma experiência de usuário aprimorada.
-          </p>
+          </p> -->
         </section>
-        <section>
+        <section class="portifolio">
           <h2 id="projetos">Projetos</h2>
+          <div class="projeto">
+            <h3>Site para Acompanhamento do Desempenho dos Vereadores (API)</h3>
+            <div class="api">
+              <a href="https://github.com/matheuskarnas/API-1"
+                ><img
+                  class="gif"
+                  src="./assets/api.gif"
+                  alt="Funcionamento da API"
+              /></a>
+            </div>
+            <p>
+              <strong>Descrição:</strong> Junto com minha equipe, criei um site
+              voltado para os cidadãos de São José dos Campos, com o objetivo de
+              fornecer informações detalhadas sobre os vereadores em atuação no
+              mandato de 2021-2024. A plataforma também destaca o desempenho de
+              cada parlamentar, auxiliando os eleitores na escolha de seus
+              candidatos para as eleições de 2024.
+            </p>
+          </div>
+          <h2 id="portifolio">Portifolio</h2>
           <div class="projetos">
             <div class="projeto">
               <h3>Personagens da Disney</h3>
               <a href="https://disney-api-seven.vercel.app/">
-                <img src="./assets/disney.png" alt="Personagens da Disney" />
+                <img
+                  class="imagem"
+                  src="./assets/disney.png"
+                  alt="Personagens da Disney"
+                />
               </a>
             </div>
             <div class="projeto">
               <h3>Encurtador de URLs</h3>
               <a href="https://url-short-three.vercel.app/">
-                <img src="./assets/url.png" alt="Encurtador de URLs" />
+                <img
+                  class="imagem"
+                  src="./assets/url.png"
+                  alt="Encurtador de URLs"
+                />
               </a>
             </div>
             <div class="projeto">
               <h3>My Trips</h3>
               <a href="https://my-trips-xi-three.vercel.app/">
-                <img src="./assets/trip.png" alt="My Trips" />
+                <img class="imagem" src="./assets/trip.png" alt="My Trips" />
               </a>
             </div>
           </div>
         </section>
-        <section>
+        <section class="habilidades">
           <h2 id="habilidades">Habilidades</h2>
-          <h3 id="hard">Hard Skills</h3>
           <div class="technologies">
             <img
               height="50px"
